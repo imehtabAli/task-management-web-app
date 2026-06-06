@@ -17,6 +17,7 @@ app.use("/api/task", taskRoute);
 app.get("/", async (req, res) => {
     res.send("Server is live.")
 })
+const PORT = process.env.PORT || 7000;
 app.listen(process.env.PORT, ()=>{
   console.log(`App is listening to ${process.env.PORT}`);
   
